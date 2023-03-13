@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            height: 100px;
+            display: flex;
+            background: gray;
+        }
+        
+        .header .logo {
+            height: 100px;
+            width: 25%;
+            background: lightcoral;
+        }
+        
+        .header .nav {
+            height: 100px;
+            width: 75%;
+            background: lightgreen;
+        }
+        
+        @media(max-width:950px) {
+            .header .logo {
+                width: 10%;
+            }
+            .header .nav {
+                width: 90%;
+            }
+        }
+        
+        @media(max-width:750px) {
+            .header .logo {
+                width: 30%;
+            }
+            .header .nav {
+                width: 70%;
+            }
+        }
+        
+        @media(max-width:650px) {
+            .header .logo {
+                width: 50%;
+            }
+            .header .nav {
+                width: 50%;
+            }
+        }
+        
+        @media(max-width:500px) {
+            .header .logo {
+                width: 90%;
+            }
+            .header .nav {
+                width: 10%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">logo</div>
+        <div class="nav">Navbar</div>
+    </div>
+
+</body>
+
+</html>
